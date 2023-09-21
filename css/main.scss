@@ -6,6 +6,20 @@ main {
     align-items: center;
 
     .number {
+        position: relative;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 1px;
+            height: 84px;
+            bottom: 56px;
+            left: 50%;
+            background: url("../assets/vertical-line.svg");
+        }
+
+
+
         &.number_two {
             margin-bottom: calc(-56px / 2);
             z-index: 1;
@@ -63,5 +77,6 @@ main {
         margin: 0px;
         width: 540px;
         margin-top: 32px;
+        margin-bottom: 156px;
     }
 }
