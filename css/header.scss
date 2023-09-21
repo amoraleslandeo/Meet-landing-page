@@ -1,0 +1,101 @@
+@import "variables";
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .meet_svg {
+        width: 119px;
+        height: 28px;
+        margin-top: 80px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .image_left {
+            width: 394px;
+            height: 303px;
+            background-image: url(../assets/desktop/image-hero-left.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: -32px;
+        }
+
+        .header_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 64px;
+                font-weight: 900;
+                line-height: 64px;
+                color: $h1-h2_main;
+                width: 445px;
+                margin: 0px;
+                margin-top: 108px;
+            }
+
+            .header_main_paragraph {
+                margin: 0px;
+                width: 540px;
+                margin-top: 34px;
+            }
+
+            .buttons {
+                margin-top: 32px;
+                display: flex;
+                gap: 16px;
+
+                .btn_download {
+                    width: 193px;
+                    border-radius: 29px;
+                    background-color: $btn_header-p_main;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: $white;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $hover_download;
+                    }
+                        span {
+                            color: $btn_footer_header;
+                        }
+
+                }
+
+                .btn_what_is_it {
+                    width: 139px;
+                    border-radius: 29px;
+                    background-color: $btn_header_footer;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: $white;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $hover_what_is_it-footer;
+                    }
+                }
+            }
+        }
+
+        .image_right {
+            width: 394px;
+            height: 303px;
+            background-image: url(../assets/desktop/image-hero-right.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 32px;
+        }
+    }
+}

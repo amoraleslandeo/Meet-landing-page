@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+@import "variables";
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Red Hat Display";
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    background-color: $bg-h2_p_footer;
+    color: $p_header_main;
+    margin: 0px;
+    width: 100%;
+}
+
+@import "header";
+@import "main";
+@import "footer";
