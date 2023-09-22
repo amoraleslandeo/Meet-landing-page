@@ -9,6 +9,7 @@ main {
         position: relative;
 
         &:before {
+            /*attribute that allow to insert other characteriscs to the tag*/
             content: " ";
             position: absolute;
             width: 1px;
@@ -18,11 +19,9 @@ main {
             background: url("../assets/vertical-line.svg");
         }
 
-
-
         &.number_two {
             margin-bottom: calc(-56px / 2);
-            z-index: 1;
+            z-index: 1; /*atributo que controla el eje z y ordena la posicion de un elemento en el eje */
         }
         span {
             display: inline-block;
@@ -48,6 +47,7 @@ main {
         img {
             width: 255px;
             height: 242px;
+            border-radius: 8px;
         }
     }
 
@@ -78,5 +78,40 @@ main {
         width: 540px;
         margin-top: 32px;
         margin-bottom: 156px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .images_grid {
+            width: 689px;
+            margin-top: 67px;
+
+            img {
+                width: 164px;
+                height: 156px;
+            }
+        }
+
+        .main_paragraph {
+            margin-top: 46px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px;
+            color: $h1-h2_main;
+            width: 445px;
+            margin: 0px;
+            margin-top: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            width: 573px;
+            margin-bottom: 164px;
+        }
     }
 }

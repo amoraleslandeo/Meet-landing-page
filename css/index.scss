@@ -20,6 +20,22 @@ body {
     color: $p_header_main;
     margin: 0px;
     width: 100%;
+
+    @media (max-width: 768px) {
+        header,
+        main,
+        footer {
+            height: auto;
+        }
+    }
+
+    @media (max-width: 375px) {
+        header,
+        main,
+        footer {
+            height: auto;
+        }
+    }
 }
 
 @import "header";
