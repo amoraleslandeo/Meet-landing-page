@@ -115,3 +115,36 @@ main {
         }
     }
 }
+
+@media (max-width: 375px) {
+    main {
+        .images_grid {
+            width: 100%;
+            margin-top: 63px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+
+            img {
+                width: 151px;
+                height: 143px;
+            }
+        }
+        .main_paragraph {
+            margin-top: 62px;
+        }
+        h2 {
+            font-size: 32px;
+            line-height: 36px;
+            width: 327px;
+            margin-top: 24px;
+        }
+
+        p {
+            width: 328px;
+            margin-bottom: 148px;
+        }
+    }
+}

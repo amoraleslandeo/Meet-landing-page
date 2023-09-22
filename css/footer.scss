@@ -71,6 +71,7 @@ footer {
         background-image: url(../assets/tablet/image-footer.jpg);
         height: 428px;
 
+
         .content_footer {
             display: flex;
             flex-direction: column;
@@ -85,13 +86,37 @@ footer {
 
             p {
                 width: 573px;
-                margin-top: 16px;
+                margin-top: 18px;
                 text-align: center;
             }
 
             a {
                 margin-top: 40px;
                 margin-bottom: 66px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        background-image: url(../assets/mobile/image-footer.jpg);
+
+        .content_footer {
+
+            h2 {
+                margin-top: 92px;
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            p {
+                width: 327px;
+            }
+
+            a {
+                margin-top: 24px;
+                margin-bottom: 72px;
             }
         }
     }
