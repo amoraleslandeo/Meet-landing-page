@@ -28,14 +28,6 @@ body {
             height: auto;
         }
     }
-
-    @media (max-width: 375px) {
-        header,
-        main,
-        footer {
-            height: auto;
-        }
-    }
 }
 
 @import "header";
